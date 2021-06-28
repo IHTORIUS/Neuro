@@ -1,0 +1,559 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+
+}
+
+//---------------------------------------------------------------------------
+void __fastcall TForm1::DofChange(TObject *Sender)
+{
+ ProgressBar1->Position=-Dof->Position;
+ }
+//---------------------------------------------------------------------------
+void __fastcall TForm1::SeraChange(TObject *Sender)
+{
+ ProgressBar2->Position=-Sera->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::EndrChange(TObject *Sender)
+{
+ ProgressBar3->Position=-Endr->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::OkstChange(TObject *Sender)
+{
+ ProgressBar4->Position=-Okst->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::NoraChange(TObject *Sender)
+{
+ ProgressBar5->Position=-Nora->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::AdreChange(TObject *Sender)
+{
+ ProgressBar6->Position=-Adre->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::EstrChange(TObject *Sender)
+{
+ProgressBar7->Position=-Estr->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::TestosChange(TObject *Sender)
+{
+ProgressBar8->Position=-Testos->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FeniChange(TObject *Sender)
+{
+ProgressBar9->Position=-Feni->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::MelaChange(TObject *Sender)
+{
+ProgressBar10->Position=-Mela->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::VazoChange(TObject *Sender)
+{
+ProgressBar11->Position=-Vazo->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::ProgesChange(TObject *Sender)
+{
+ProgressBar12->Position=-Proges->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::ProlaChange(TObject *Sender)
+{
+ProgressBar13->Position=-Prola->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::AcetChange(TObject *Sender)
+{
+ProgressBar14->Position=-Acet->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::TiroChange(TObject *Sender)
+{
+ProgressBar15->Position=-Tiro->Position;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::ComboBox1Change(TObject *Sender)
+{
+//Maniya
+ if(ComboBox1->ItemIndex==0){
+  Dof->Position=-100;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Trevoga
+ if(ComboBox1->ItemIndex==1){
+  Dof->Position=-30;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Schastye
+if(ComboBox1->ItemIndex==2){
+  Dof->Position=0;
+  Sera->Position=-100;
+  Endr->Position=-100;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Interes
+if(ComboBox1->ItemIndex==3){
+  Dof->Position=0;
+  Sera->Position=-100;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=-80;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Gnev
+if(ComboBox1->ItemIndex==4){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=-100;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Azart
+if(ComboBox1->ItemIndex==5){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=-100;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=-100;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Lyubov
+if(ComboBox1->ItemIndex==6){
+  Dof->Position=-80;
+  Sera->Position=-80;
+  Endr->Position=0;
+  Okst->Position=-80;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Stress
+if(ComboBox1->ItemIndex==7){
+  Dof->Position=-30;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=-50;
+  Adre->Position=-100;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=-80;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Depressiya
+if(ComboBox1->ItemIndex==8){
+  Dof->Position=-40;
+  Sera->Position=-40;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=-10;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=-70;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Autist
+if(ComboBox1->ItemIndex==9){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=-10;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Strax
+if(ComboBox1->ItemIndex==10){
+  Dof->Position=-10;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=-10;
+  Nora->Position=0;
+  Adre->Position=-100;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Materinskaya chuvstvo
+if(ComboBox1->ItemIndex==11){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=-100;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=-100;
+  Prola->Position=-100;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Apatiya
+if(ComboBox1->ItemIndex==12){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=-10;
+  Adre->Position=-10;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=-100;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Eyforiya
+if(ComboBox1->ItemIndex==13){
+  Dof->Position=-50;
+  Sera->Position=0;
+  Endr->Position=-100;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Ozareniye
+if(ComboBox1->ItemIndex==14){
+  Dof->Position=-100;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=-100;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=-100;
+  Tiro->Position=0;
+}
+//Grusty
+if(ComboBox1->ItemIndex==15){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=-95;
+}
+//Razdrajeniye
+if(ComboBox1->ItemIndex==16){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=-10;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=-100;
+}
+//Vlyublyonnosty
+if(ComboBox1->ItemIndex==17){
+  Dof->Position=-100;
+  Sera->Position=0;
+  Endr->Position=-100;
+  Okst->Position=0;
+  Nora->Position=-10;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=-100;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=-100;
+}
+//Uverennosty
+if(ComboBox1->ItemIndex==18){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=-100;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=-15;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=-20;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Privyazannosty
+if(ComboBox1->ItemIndex==19){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=-50;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=-100;
+}
+//Podchineniye
+if(ComboBox1->ItemIndex==20){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=-40;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=-80;
+}
+//Dominirevoniye
+if(ComboBox1->ItemIndex==21){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=-100;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=-60;
+  Prola->Position=0;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Vlecheniye
+if(ComboBox1->ItemIndex==22){
+  Dof->Position=0;
+  Sera->Position=0;
+  Endr->Position=0;
+  Okst->Position=-80;
+  Nora->Position=-80;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=-100;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=-25;
+  Acet->Position=0;
+  Tiro->Position=0;
+}
+//Udovletvorennosty
+if(ComboBox1->ItemIndex==23){
+  Dof->Position=-80;
+  Sera->Position=0;
+  Endr->Position=-80;
+  Okst->Position=0;
+  Nora->Position=0;
+  Adre->Position=0;
+  Estr->Position=0;
+  Testos->Position=0;
+  Feni->Position=0;
+  Mela->Position=0;
+  Vazo->Position=0;
+  Proges->Position=0;
+  Prola->Position=-80;
+  Acet->Position=0;
+  Tiro->Position=-100;
+}
+}
+
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+float dof,sera,endr,okst,nora,andre,estr,testos;
+float feni,mela,vazo,proges,prola,acet,tiro;
+
+dof=-Dof->Position*1.0;
+sera=-Sera->Position*1.0;
+endr=-Endr->Position*1.0;
+okst=-Okst->Position*1.0;
+nora=-Nora->Position*1.0;
+andre=-Adre->Position*1.0;
+estr=-Estr->Position*1.0;
+testos=-Testos->Position*1.0;
+feni=-Feni->Position*1.0;
+mela=-Mela->Position*1.0;
+vazo=-Vazo->Position*1.0;
+proges=-Proges->Position*1.0;
+prola=-Prola->Position*1.0;
+acet=-Acet->Position*1.0;
+tiro=-Tiro->Position*1.0;
+
+ProgressBar16->Position=1500-(dof*7.5+sera*7.5+endr*7.5+okst*10-nora*15+andre*5-estr*5+
+testos*12+feni*5-mela*5-vazo*3-proges*3+prola*3+acet*3+tiro*5);
+}
+//---------------------------------------------------------------------------
+
